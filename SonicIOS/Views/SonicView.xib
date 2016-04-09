@@ -140,6 +140,9 @@
                         <rect key="frame" x="285" y="213" width="30" height="30"/>
                         <state key="normal" title="Play"/>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZsM-f3-5LP">
+                        <rect key="frame" x="180" y="169" width="240" height="128"/>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" red="0.1450980392" green="0.1960784314" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
             </view>
