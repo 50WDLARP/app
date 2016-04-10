@@ -14,27 +14,44 @@ class SonicView: UIView {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var distance : UILabel!
 
+    @IBOutlet weak var tag_button: UIButton!
+    @IBOutlet weak var castle_button: UIButton!
+    @IBOutlet weak var play_button: UIButton!
+    @IBOutlet weak var pause_button: UIButton!
+    
     @IBAction func Back(sender: UIButton) {
         print("Back")
     }
     
+    @IBOutlet weak var play_view: UIView!
+    
+    
     @IBAction func Tag(sender: UIButton) {
         print("Tag")
+        sender.hidden = true
+        castle_button.hidden = true;
+        play_button.hidden = false;
+        pause_button.hidden = false;
     }
     
-    @IBAction func Castle(sender: AnyObject) {
+    @IBAction func Castle(sender: UIButton) {
         print("Castle")
+        sender.hidden = true
+        tag_button.hidden = true
+        play_button.hidden = false
+        pause_button.hidden = false
     }
     
-    @IBAction func Back2(sender: AnyObject) {
+    @IBAction func Back2(sender: UIButton) {
         print("Back 2")
     }
     
-    @IBAction func Play(sender: AnyObject) {
+    @IBAction func Play(sender: UIButton) {
         print("Play")
     }
     
-    @IBAction func Pause(sender: AnyObject) {
+    
+    @IBAction func Pause(sender: UIButton) {
         print("Pause")
     }
     
