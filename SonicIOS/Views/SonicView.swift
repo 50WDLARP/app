@@ -14,6 +14,30 @@ class SonicView: UIView {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var distance : UILabel!
 
+    @IBAction func Back(sender: UIButton) {
+        print("Back")
+    }
+    
+    @IBAction func Tag(sender: UIButton) {
+        print("Tag")
+    }
+    
+    @IBAction func Castle(sender: AnyObject) {
+        print("Castle")
+    }
+    
+    @IBAction func Back2(sender: AnyObject) {
+        print("Back 2")
+    }
+    
+    @IBAction func Play(sender: AnyObject) {
+        print("Play")
+    }
+    
+    @IBAction func Pause(sender: AnyObject) {
+        print("Pause")
+    }
+    
     // MARK: Lifecycle
 
     required init?(coder aDecoder: NSCoder) {

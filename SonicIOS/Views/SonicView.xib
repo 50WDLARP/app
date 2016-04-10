@@ -32,16 +32,12 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="Tw2-9T-2Eb"/>
                     </constraints>
-                    <state key="normal" title="Midieval Castle World">
+                    <state key="normal" title="Medieval Castle World">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKf-MP-lRT">
-                    <rect key="frame" x="57" y="89" width="486" height="100"/>
-                    <color key="backgroundColor" red="0.24313725490196078" green="0.51764705882352946" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Tag">
-                        <color key="titleColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
+                    <connections>
+                        <action selector="Castle:" destination="-1" eventType="touchUpInside" id="KPZ-kh-fe0"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bean Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Few-Xo-ADo">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
@@ -53,13 +49,6 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zn-CF-bUI">
-                    <rect key="frame" x="8" y="9" width="51" height="30"/>
-                    <accessibility key="accessibilityConfiguration" label="Back"/>
-                    <state key="normal" title="Back">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0U3-IO-lcZ" customClass="NumberLabel" customModule="SonicIOS" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="418" width="600" height="129"/>
                     <constraints>
@@ -69,6 +58,26 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zn-CF-bUI">
+                    <rect key="frame" x="8" y="14" width="51" height="29"/>
+                    <accessibility key="accessibilityConfiguration" label="Back"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="Back:" destination="-1" eventType="touchUpInside" id="sXh-my-whw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKf-MP-lRT">
+                    <rect key="frame" x="57" y="89" width="486" height="100"/>
+                    <color key="backgroundColor" red="0.24313725490196078" green="0.51764705882352946" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Tag">
+                        <color key="titleColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="Tag:" destination="-1" eventType="touchUpInside" id="htN-SO-QiP"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.14509803921568629" green="0.19607843137254902" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
@@ -101,23 +110,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Game Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7r-n1-TWZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
-                        <color key="backgroundColor" red="0.57647058819999997" green="0.59999999999999998" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="57" id="D9H-II-5M6"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="32"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5La-iV-XZd">
-                        <rect key="frame" x="12" y="9" width="51" height="30"/>
-                        <accessibility key="accessibilityConfiguration" label="Back"/>
-                        <state key="normal" title="Back">
-                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </state>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="x:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5U-ql-8Iw" customClass="NumberLabel" customModule="SonicIOS" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="424" width="600" height="129"/>
                         <constraints>
@@ -136,17 +128,38 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgi-4z-aBU">
-                        <rect key="frame" x="285" y="213" width="30" height="30"/>
-                        <state key="normal" title="Play"/>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgi-4z-aBU">
+                        <rect key="frame" x="205" y="164" width="190" height="175"/>
+                        <state key="normal" image="play"/>
+                        <connections>
+                            <action selector="Play:" destination="-1" eventType="touchUpInside" id="NVy-fL-mTN"/>
+                        </connections>
                     </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZsM-f3-5LP">
-                        <rect key="frame" x="180" y="169" width="240" height="128"/>
-                    </imageView>
+                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5w-iL-bMD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                        <color key="backgroundColor" red="0.50196078431372548" green="0.52549019607843139" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <items>
+                            <navigationItem title="Play" id="Kdg-lE-uG2">
+                                <barButtonItem key="leftBarButtonItem" style="plain" id="vaf-vm-8co">
+                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5La-iV-XZd">
+                                        <rect key="frame" x="20" y="7" width="51" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" label="Back"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Back2:" destination="-1" eventType="touchUpInside" id="hs5-QL-htg"/>
+                                        </connections>
+                                    </button>
+                                </barButtonItem>
+                            </navigationItem>
+                        </items>
+                    </navigationBar>
                 </subviews>
                 <color key="backgroundColor" red="0.1450980392" green="0.1960784314" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
             </view>
-            <point key="canvasLocation" x="1110" y="187"/>
+            <point key="canvasLocation" x="1069" y="187"/>
         </viewController>
         <viewController id="wW3-Rk-W3x">
             <layoutGuides>
@@ -185,43 +198,29 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YS-RS-E8f">
-                        <rect key="frame" x="284" y="210" width="32" height="30"/>
-                        <state key="normal" title="Stop"/>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YS-RS-E8f">
+                        <rect key="frame" x="244" y="207" width="100" height="100"/>
+                        <state key="normal" image="pause"/>
+                        <connections>
+                            <action selector="Pause:" destination="-1" eventType="touchUpInside" id="NSf-Lh-uo4"/>
+                        </connections>
                     </button>
                 </subviews>
                 <color key="backgroundColor" red="0.1450980392" green="0.1960784314" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
             </view>
-            <point key="canvasLocation" x="1766" y="187"/>
+            <point key="canvasLocation" x="1743" y="187"/>
         </viewController>
         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ndc-nh-QM3">
             <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <state key="normal" title="Button"/>
         </button>
-        <viewController id="xp2-aU-6yy">
-            <layoutGuides>
-                <viewControllerLayoutGuide type="top" id="PPp-SN-pSQ"/>
-                <viewControllerLayoutGuide type="bottom" id="F6F-i7-uHI"/>
-            </layoutGuides>
-            <view key="view" contentMode="scaleToFill" id="7b4-8c-5wf">
-                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Your Badges" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNL-bD-25h">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
-                        <color key="backgroundColor" red="0.57647058819999997" green="0.59999999999999998" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="57" id="Xuf-px-iYR"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="32"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                </subviews>
-                <color key="backgroundColor" red="0.10980392156862745" green="0.14117647058823529" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
-            </view>
-            <point key="canvasLocation" x="2426" y="187"/>
+        <viewController id="E9n-ed-95j">
+            <point key="canvasLocation" x="1082" y="51"/>
         </viewController>
     </objects>
+    <resources>
+        <image name="pause" width="100" height="100"/>
+        <image name="play" width="100" height="100"/>
+    </resources>
 </document>
