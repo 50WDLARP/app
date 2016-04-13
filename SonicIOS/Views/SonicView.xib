@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SonicView" customModule="SonicIOS" customModuleProvider="target">
             <connections>
+                <outlet property="back_button" destination="8Zn-CF-bUI" id="ywy-y3-A0X"/>
                 <outlet property="castle_button" destination="rIi-7t-GJl" id="RF6-rA-Xsm"/>
                 <outlet property="containerView" destination="iN0-l3-epB" id="hnY-kG-3FS"/>
                 <outlet property="distance" destination="0U3-IO-lcZ" id="vch-xM-MLd"/>
@@ -62,7 +63,7 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zn-CF-bUI">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zn-CF-bUI">
                     <rect key="frame" x="8" y="14" width="51" height="29"/>
                     <accessibility key="accessibilityConfiguration" label="Back"/>
                     <state key="normal" title="Back">
@@ -94,7 +95,7 @@
                     </connections>
                 </button>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNH-6Z-hT4">
-                    <rect key="frame" x="250" y="331" width="100" height="100"/>
+                    <rect key="frame" x="247" y="160" width="100" height="100"/>
                     <state key="normal" image="pause"/>
                     <connections>
                         <action selector="Pause:" destination="-1" eventType="touchUpInside" id="UEc-IP-2Uk"/>
@@ -108,14 +109,14 @@
                 <constraint firstItem="0U3-IO-lcZ" firstAttribute="top" secondItem="rIi-7t-GJl" secondAttribute="bottom" constant="95" id="2wg-7M-KxQ"/>
                 <constraint firstItem="0U3-IO-lcZ" firstAttribute="trailing" secondItem="57t-dj-Qwb" secondAttribute="trailing" id="7Pj-X6-ql0"/>
                 <constraint firstItem="57t-dj-Qwb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="471" id="C4v-kl-Mzd"/>
-                <constraint firstItem="HNH-6Z-hT4" firstAttribute="top" secondItem="rIi-7t-GJl" secondAttribute="bottom" constant="8" symbolic="YES" id="E98-CY-f7m"/>
                 <constraint firstItem="Few-Xo-ADo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EFk-ok-YFV"/>
                 <constraint firstItem="SN5-3m-jEG" firstAttribute="top" secondItem="Few-Xo-ADo" secondAttribute="bottom" constant="65" id="Qcz-0X-BFm"/>
                 <constraint firstAttribute="trailing" secondItem="0U3-IO-lcZ" secondAttribute="trailing" id="SBG-80-y5P"/>
                 <constraint firstItem="0U3-IO-lcZ" firstAttribute="centerX" secondItem="uKf-MP-lRT" secondAttribute="centerX" id="UA8-tf-OWg"/>
                 <constraint firstAttribute="bottom" secondItem="0U3-IO-lcZ" secondAttribute="bottom" constant="53" id="UML-Sg-T49"/>
-                <constraint firstItem="HNH-6Z-hT4" firstAttribute="centerX" secondItem="0U3-IO-lcZ" secondAttribute="centerX" id="Z6b-PT-YkF"/>
                 <constraint firstItem="0U3-IO-lcZ" firstAttribute="trailing" secondItem="Few-Xo-ADo" secondAttribute="trailing" id="dCF-rd-aBD"/>
+                <constraint firstItem="HNH-6Z-hT4" firstAttribute="centerY" secondItem="SN5-3m-jEG" secondAttribute="centerY" id="dop-3V-QQQ"/>
+                <constraint firstItem="HNH-6Z-hT4" firstAttribute="centerX" secondItem="rIi-7t-GJl" secondAttribute="centerX" id="eXQ-wV-sua"/>
                 <constraint firstItem="rIi-7t-GJl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="57" id="iAD-kq-TzB"/>
                 <constraint firstItem="uKf-MP-lRT" firstAttribute="top" secondItem="Few-Xo-ADo" secondAttribute="bottom" constant="32" id="im9-Yq-GqQ"/>
                 <constraint firstItem="SN5-3m-jEG" firstAttribute="centerX" secondItem="rIi-7t-GJl" secondAttribute="centerX" id="ipN-69-J29"/>
