@@ -50,6 +50,7 @@ class SonicView: UIView {
         sender.hidden = true
         back_button.hidden = true
         pause_button.hidden = false
+        //connectedBean.sendSerialData("T")
     }
     
     
