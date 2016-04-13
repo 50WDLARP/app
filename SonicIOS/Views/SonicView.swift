@@ -9,7 +9,8 @@
 import UIKit
 
 class SonicView: UIView {
-
+    
+    var connectedBean: PTDBean?
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var distance : UILabel!
@@ -50,6 +51,7 @@ class SonicView: UIView {
         sender.hidden = true
         back_button.hidden = true
         pause_button.hidden = false
+        connectedBean!.sendSerialData("T".dataUsingEncoding( NSUTF8StringEncoding))
     }
     
     

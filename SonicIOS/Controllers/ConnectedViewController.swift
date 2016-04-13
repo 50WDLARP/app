@@ -22,6 +22,7 @@ class ConnectedViewController: UIViewController, PTDBeanDelegate {
 
         // Update the name label.
         sonicView.nameLabel.text = connectedBean?.name
+        sonicView.connectedBean = connectedBean
         
     }
 
