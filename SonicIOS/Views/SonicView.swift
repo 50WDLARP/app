@@ -40,10 +40,10 @@ class SonicView: UIView {
     
     @IBAction func Castle(sender: UIButton) {
         print("Castle")
-        sender.hidden = true
+        /*sender.hidden = true
         tag_button.hidden = true
         play_button.hidden = false
-        back_button.hidden = false
+        back_button.hidden = false*/
     }
     
     @IBAction func Play(sender: UIButton) {
@@ -68,6 +68,7 @@ class SonicView: UIView {
         super.init(coder: aDecoder)
         let bundle = NSBundle(forClass: self.dynamicType)
         self.addSubview(bundle.loadNibNamed("SonicView", owner: self, options: nil)[0] as! UIView)
+        //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
     }
 
 }
