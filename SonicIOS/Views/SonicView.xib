@@ -22,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="itC-a3-HZ4">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="itC-a3-HZ4">
                     <rect key="frame" x="0.0" y="56" width="600" height="544"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rIi-7t-GJl">
@@ -69,10 +69,11 @@
                     </connections>
                 </button>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zn-CF-bUI">
-                    <rect key="frame" x="0.0" y="8" width="81" height="45"/>
+                    <rect key="frame" x="0.0" y="8" width="62" height="34"/>
                     <accessibility key="accessibilityConfiguration" label="Back"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="81" id="kTK-WD-DDZ"/>
+                        <constraint firstAttribute="width" constant="62" id="MUn-09-koQ"/>
+                        <constraint firstAttribute="height" constant="34" id="Nf5-C9-03X"/>
                     </constraints>
                     <state key="normal" title="Back" image="prev">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -98,21 +99,24 @@
             </subviews>
             <color key="backgroundColor" red="0.64313725490196072" green="0.80392156862745101" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="8Zn-CF-bUI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="2HN-ii-Ye4"/>
+                <constraint firstItem="itC-a3-HZ4" firstAttribute="leading" secondItem="8Zn-CF-bUI" secondAttribute="leading" id="5lf-KF-2m1"/>
                 <constraint firstAttribute="trailing" secondItem="rIi-7t-GJl" secondAttribute="trailing" constant="62" id="6Sg-8J-4L6"/>
                 <constraint firstItem="rIi-7t-GJl" firstAttribute="top" secondItem="uKf-MP-lRT" secondAttribute="bottom" constant="34" id="6qT-AH-Q9y"/>
                 <constraint firstItem="rIi-7t-GJl" firstAttribute="leading" secondItem="uKf-MP-lRT" secondAttribute="leading" id="76M-pa-KFp"/>
                 <constraint firstItem="rIi-7t-GJl" firstAttribute="centerX" secondItem="HNH-6Z-hT4" secondAttribute="centerX" id="BE8-Ww-Ik4"/>
                 <constraint firstItem="rIi-7t-GJl" firstAttribute="centerX" secondItem="SN5-3m-jEG" secondAttribute="centerX" id="DKB-F0-gQk"/>
-                <constraint firstItem="8Zn-CF-bUI" firstAttribute="leading" secondItem="Few-Xo-ADo" secondAttribute="leading" id="Fkd-l1-BxS"/>
-                <constraint firstItem="8Zn-CF-bUI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="Nhs-lX-Q3y"/>
                 <constraint firstItem="uKf-MP-lRT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="89" id="Qfa-Fh-gDv"/>
                 <constraint firstItem="uKf-MP-lRT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TAp-4q-gqd"/>
                 <constraint firstItem="uKf-MP-lRT" firstAttribute="top" secondItem="Few-Xo-ADo" secondAttribute="bottom" constant="32" id="Tdw-jq-tnb"/>
-                <constraint firstItem="8Zn-CF-bUI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="U0b-7K-Xmh"/>
                 <constraint firstItem="uKf-MP-lRT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="57" id="VMa-Ea-fIW"/>
+                <constraint firstItem="itC-a3-HZ4" firstAttribute="trailing" secondItem="Few-Xo-ADo" secondAttribute="trailing" id="aBJ-Nd-TbS"/>
                 <constraint firstItem="HNH-6Z-hT4" firstAttribute="centerY" secondItem="SN5-3m-jEG" secondAttribute="centerY" id="dop-3V-QQQ"/>
                 <constraint firstItem="uKf-MP-lRT" firstAttribute="centerX" secondItem="Few-Xo-ADo" secondAttribute="centerX" id="dyW-jN-M5M"/>
-                <constraint firstItem="uKf-MP-lRT" firstAttribute="top" secondItem="8Zn-CF-bUI" secondAttribute="bottom" constant="36" id="rsN-hv-GKh"/>
+                <constraint firstItem="8Zn-CF-bUI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kkH-mc-7DC"/>
+                <constraint firstItem="8Zn-CF-bUI" firstAttribute="leading" secondItem="Few-Xo-ADo" secondAttribute="leading" id="v5Q-PP-mBJ"/>
+                <constraint firstItem="itC-a3-HZ4" firstAttribute="top" secondItem="8Zn-CF-bUI" secondAttribute="bottom" constant="14" id="vrq-wX-lfR"/>
+                <constraint firstAttribute="bottom" secondItem="itC-a3-HZ4" secondAttribute="bottom" id="wKk-GE-OcY"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <point key="canvasLocation" x="401" y="187"/>
@@ -123,7 +127,7 @@
     </objects>
     <resources>
         <image name="background" width="204" height="363"/>
-        <image name="pause" width="100" height="100"/>
+        <image name="pause" width="147" height="145"/>
         <image name="play" width="139" height="139"/>
         <image name="prev" width="110" height="84"/>
     </resources>
