@@ -69,6 +69,7 @@ class SonicView: UIView {
         let bundle = NSBundle(forClass: self.dynamicType)
         self.addSubview(bundle.loadNibNamed("SonicView", owner: self, options: nil)[0] as! UIView)
         //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
+        //self.window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background_image.1.png"]];
     }
 
 }
