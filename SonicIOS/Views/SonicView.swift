@@ -60,6 +60,8 @@ class SonicView: UIView {
         sender.hidden = true
         play_button.hidden = false
         back_button.hidden = false
+        connectedBean!.sendSerialData("N".dataUsingEncoding( NSUTF8StringEncoding))
+
     }
     
     // MARK: Lifecycle
